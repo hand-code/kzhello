@@ -7,7 +7,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from modules.modules import Base
 
 
-engine = create_engine('postgresql://root:cxf218dj1q8@10.144.177.116:5432/feed', convert_unicode=True, echo=True)
+engine = create_engine('postgresql://root:root@hostname:port/feed', convert_unicode=True, echo=True)
 db_session = scoped_session(sessionmaker(autocommit=False,
                                          autoflush=False,
                                          bind=engine))
